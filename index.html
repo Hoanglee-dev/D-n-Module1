@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container-hotel">
+      <div class="header">
+        <div class="header-right">
+          <div class="header-right-top">
+            <div class="language">
+              <a class="language-a">Language</a>
+              <a class="language-a">English</a>
+            </div>
+            <div class="enter">
+              <a class="enter-a">Join</a> |
+              <a class="enter-a">Sing in</a>
+              <i
+                class="fa-solid fa-circle-user"
+                ,
+                style="font-size: 20px; color: #104c97"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="header-left">
+          <img
+            class="logo"
+            src="https://stories-editor.hilton.com/wp-content/uploads/2022/04/HHR-Logo-Color_HR-1.png?w=800"
+            alt=""
+          />
+          <div class="menu">
+            <div class="menu-child">
+              <ul class="menu-ul">
+                <li class="menu_itmes">
+                  <a class="style-menu-a" href="">Home</a>
+                </li>
+                <li class="menu_itmes">
+                  <a class="style-menu-a" href="">Rooms</a>
+                </li>
+                <li class="menu_itmes">
+                  <a class="style-menu-a" href="">Hotel Info</a>
+                </li>
+                <li class="menu_itmes">
+                  <a class="style-menu-a" href="">Offers</a>
+                </li>
+                <li class="menu_itmes">
+                  <a class="style-menu-a" href="">Gallery</a>
+                </li>
+                <li class="menu_itmes">
+                  <a class="style-menu-a" href="">Location</a>
+                </li>
+                <li class="menu_itmes">
+                  <a class="style-menu-a" href="">Dining</a>
+                </li>
+                <li class="menu_itmes">
+                  <a class="style-menu-a" href="">Events</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar" , style="padding: 0">
+        <div class="brand"><h1 class="brand-h1">Hilton Da Nang</h1></div>
+        <div class="booking">
+          <div class="dd-mm">
+            <div class="dd-mm_1">
+              <div class="dd"><p class="dd-p">30</p></div>
+              <div class="mm">
+                <span>Jun</span>
+                <span>Sun</span>
+              </div>
+            </div>
+            <div class="dd-mm_2">
+              <div class="dd"><p class="dd-p">1</p></div>
+              <div class="mm">
+                <span>Jul</span>
+                <span>Mon</span>
+              </div>
+            </div>
+          </div>
+          <div class="selec-items">
+            <div class="button-white">
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                ,
+                style="border: 1.5px solid black"
+              >
+                1 Room, 1 Guest
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                ,
+                style="border: 1.5px solid black"
+              >
+                Specical Rates
+              </button>
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary"
+              ,
+              style="border: 1.5px solid black; background-color: #104c97"
+            >
+              Check Rooms & Rates
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="main__slide">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+                  <div class="card">
+                    <img
+                      src="https://www.hilton.com/im/en/DADDVHI/9210588/daddv-main-lobby.jpg?impolicy=crop&cw=5386&ch=3015&gravity=NorthWest&xposition=0&yposition=301&rw=768&rh=430"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card">
+                    <img
+                      src="https://www.hilton.com/im/en/DADDVHI/9210432/daddv-the-sail-2.jpg?impolicy=crop&cw=5358&ch=3000&gravity=NorthWest&xposition=34&yposition=0&rw=768&rh=430"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card">
+                    <img
+                      src="https://www.hilton.com/im/en/DADDVHI/9210522/daddv-guest-room-river-view-twin-bed.jpg?impolicy=crop&cw=5390&ch=3017&gravity=NorthWest&xposition=0&yposition=188&rw=768&rh=430"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                  <div class="card">
+                    <img
+                      src="https://www.hilton.com/im/en/DADDVHI/9210529/daddv-one-bedroo-suite-living-room.jpg?impolicy=crop&cw=5854&ch=3277&gravity=NorthWest&xposition=0&yposition=329&rw=768&rh=430"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card">
+                    <img
+                      src="https://www.hilton.com/im/en/DADDVHI/9210478/daddv-executive-room-ocean-view-king-bed.jpg?impolicy=crop&cw=5037&ch=2820&gravity=NorthWest&xposition=0&yposition=155&rw=768&rh=430"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card">
+                    <img
+                      src="https://www.hilton.com/im/en/DADDVHI/9224638/daddv-the-sail-interior-3-daytime.jpg?impolicy=crop&cw=5391&ch=3018&gravity=NorthWest&xposition=0&yposition=287&rw=768&rh=430"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                  <div class="card">
+                    <img
+                      src="https://www.hilton.com/im/en/DADDVHI/9210650/daddv-brasserie-nam-2.jpg?impolicy=crop&cw=5391&ch=3018&gravity=NorthWest&xposition=0&yposition=301&rw=768&rh=430"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card">
+                    <img
+                      src="https://www.hilton.com/im/en/DADDVHI/9210611/daddv-swimming-pool-1.jpg?impolicy=crop&cw=5472&ch=3063&gravity=NorthWest&xposition=0&yposition=292&rw=768&rh=430"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card">
+                    <img
+                      src="https://www.hilton.com/im/en/DADDVHI/9210604/daddv-hilton-fitness-center.jpg?impolicy=crop&cw=5472&ch=3063&gravity=NorthWest&xposition=0&yposition=292&rw=768&rh=430"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleControls"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleControls"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="main__info">
+          <div class="info__review">
+            <div class="picture">
+              <img
+                src="https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/5.0-26025-5.svg"
+                ,
+                style="margin-left: 0"
+                alt=""
+              />
+            </div>
+            <div class="rate">
+              <h5 style="margin-bottom: 0px">5.0 | 5 Reviews</h5>
+              <p class="rate-p">Based on <strong>1745</strong> guest reviews</p>
+            </div>
+          </div>
+          <div class="info__hostline">
+            <div class="call">
+              <p class="call-p">
+                <strong>Call Us </strong><br /><a
+                  href=""
+                  style="color: black; font-weight: 400"
+                  >+84 236 3874 000</a
+                >
+              </p>
+            </div>
+            <div class="email">
+              <p class="email-p">
+                <strong>Email Us</strong><br />
+                <a href="" style="color: black; font-weight: 400"
+                  >daddv_hotel @hilton.com</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="info__address">
+            <p class="address-p">
+              <b>Address</b> <br />
+              <a href="" style="color: black; font-weight: 400">
+                50 Bach Dang St, Hai Chau District <br />
+                550000 Da Nang, Vietnam</a
+              >
+            </p>
+          </div>
+          <div class="info__arrivaltime">
+            <p class="arrivaltime-p">
+              <strong>Arrival Time</strong> <br />
+              Check-in <strong>3pm</strong> → Check-out <strong>12pm</strong>
+            </p>
+          </div>
+        </div>
+        <div class="main__preview">
+          <div class="preview__container1">
+            <h2 class="preview__container1--h2">Riverside views in Da Nang</h2>
+            <p class="preview__container1--p">
+              Our 28-story hotel overlooks the Han River, next to the iconic
+              Dragon Bridge and five minutes from Da Nang beaches. Our 24-hour
+              fitness center features yoga and stretching space, with more room
+              for relaxation on the fourth-floor pool terrace. Enjoy all-day
+              dining in our restaurant and café, and cocktails with panoramic
+              views from The Sail lounge.
+            </p>
+          </div>
+          <div class="preview__container2">
+            <h2 class="preview__container2--h2">Our amenities</h2>
+            <br />
+            <div class="container2_items">
+              <ul class="container2_items-ul1">
+                <li class="container2_items-li">
+                  <i class="preview-items-style fa-solid fa-square-parking"></i>
+                  Free parking
+                </li>
+                <li class="container2_items-li">
+                  <i class="preview-items-style fa-solid fa-user-tie"></i>
+                  Concierge
+                </li>
+                <li class="container2_items-li">
+                  <i
+                    class="preview-items-style fa-solid fa-person-swimming"
+                  ></i>
+                  Outdoor pool
+                </li>
+                <li class="container2_items-li">
+                  <i class="preview-items-style fa-solid fa-briefcase"></i>
+                  Business center
+                </li>
+              </ul>
+
+              <ul class="container2_items-ul2">
+                <li class="container2_items-li">
+                  <i class="preview-items-style fa-solid fa-wifi"></i> wifi
+                </li>
+                <li class="container2_items-li">
+                  <i class="preview-items-style fa-solid fa-couch"></i>
+                  Executive lounge
+                </li>
+                <li class="container2_items-li">
+                  <i class="preview-items-style fa-solid fa-dumbbell"></i>
+                  Fitness center
+                </li>
+                <li class="container2_items-li">
+                  <i class="preview-items-style fa-solid fa-people-group"></i>
+                  Meeting rooms
+                </li>
+              </ul>
+
+              <ul class="container2_items-ul3">
+                <li class="container2_items-li">
+                  <i class="preview-items-style fa-solid fa-ban-smoking"></i>
+                  Non-smoking rooms
+                </li>
+                <li class="container2_items-li">
+                  <i class="preview-items-style fa-solid fa-bell-concierge"></i>
+                  On-site restaurant
+                </li>
+                <li class="container2_items-li">
+                  <i class="preview-items-style fa-solid fa-utensils"></i> Room
+                  service
+                </li>
+                <li class="container2_items-li">
+                  <i class="preview-items-style fa-solid fa-dog"></i> Pets not
+                  allowed
+                </li>
+              </ul>
+            </div>
+            <button class="preview_button" type="button">All Amenities</button>
+          </div>
+        </div>
+        <div class="main__wrapper">
+          <div class="wrapper-header">
+            <h2
+              class="wrapper-header-h2"
+              style="text-align: center; margin-top: 16px; margin-bottom: 5px"
+            >
+              Rooms and suites
+            </h2>
+          </div>
+          <div class="wrapper-cards">
+            <div class="wrapper-box">
+              <div class="boxcard">
+                <img
+                  src="https://www.hilton.com/im/en/DADDVHI/9210517/daddv-guest-room-river-view-king-bed.jpg?impolicy=crop&cw=5360&ch=3207&gravity=NorthWest&xposition=0&yposition=142&rw=528&rh=316"
+                  class="img-wrapper"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p><a class="card-text" href="">Guest Rooms</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper-box">
+              <div class="boxcard">
+                <img
+                  src="https://www.hilton.com/im/en/DADDVHI/9210529/daddv-one-bedroo-suite-living-room.jpg?impolicy=crop&cw=5854&ch=3503&gravity=NorthWest&xposition=0&yposition=216&rw=528&rh=316"
+                  class="img-wrapper"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p><a class="card-text" href="">Suites</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper-box">
+              <div class="boxcard">
+                <img
+                  src="https://www.hilton.com/im/en/DADDVHI/9210483/daddv-executive-room-ocean-view-twin-bed.jpg?impolicy=crop&cw=5422&ch=3244&gravity=NorthWest&xposition=0&yposition=185&rw=528&rh=316"
+                  class="img-wrapper"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p><a class="card-text" href="">Executive</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper-box">
+              <div class="boxcard">
+                <img
+                  src="https://www.hilton.com/im/en/DADDVHI/9210517/daddv-guest-room-river-view-king-bed.jpg?impolicy=crop&cw=5360&ch=3207&gravity=NorthWest&xposition=0&yposition=142&rw=528&rh=316"
+                  class="img-wrapper"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p><a class="card-text" href="">Accessible</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper-bottom">
+            <div class="p-2">
+              Explore a stay from <strong>1,748,400₫ per night</strong> for your
+              selected dates: June 26 – 27, 2024
+            </div>
+            <div class="text__p-2">
+              <b>Plus 5.00</b> % service charge per stay, plus tax
+            </div>
+            <div class="button">
+              <button
+                type="button"
+                class="btn btn-primary"
+                ,
+                style="
+                  border: 1.5px solid black;
+                  background-color: #104c97;
+                  font-weight: 700;
+                  width: 177px;
+                  margin-top: 20px;
+                "
+              >
+                View All Rooms
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="main__brand">
+          <div class="brand-title">
+            <h2 class="brand-title-h2">Hilton Honors member benefits</h2>
+          </div>
+          <div class="container-box">
+            <div class="box__brand--items">
+              <div class="brand--items">
+                <div class="icon">
+                  <i class="fa-solid fa-hand-holding-dollar style-custom"></i>
+                </div>
+                <div class="p-2">Hilton Honors Discount rate</div>
+              </div>
+              <div class="brand--items">
+                <div class="icon">
+                  <i class="fa-solid fa-coins style-custom"></i>
+                </div>
+                <div class="p-2">Points toward free nights and more</div>
+              </div>
+              <div class="brand--items">
+                <div class="icon">
+                  <i class="fa-solid fa-door-open style-custom"></i>
+                </div>
+                <div class="p-2">Choose Your Room</div>
+              </div>
+              <div class="brand--items">
+                <div class="icon">
+                  <i class="fa-solid fa-mobile-screen-button style-custom"></i>
+                </div>
+                <div class="p-2">Digital Check-In</div>
+              </div>
+              <div class="brand--items">
+                <div class="icon">
+                  <i class="fa-solid fa-ticket style-custom"></i>
+                </div>
+                <div class="p-2">Hilton Honors Experiences</div>
+              </div>
+              <div class="brand--items">
+                <div class="icon">
+                  <i class="fa-solid fa-key style-custom"></i>
+                </div>
+                <div class="p-2">Digital Key</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__policie">
+          <div class="policie-title">
+            <h2 class="policie-title-h2">Hotel policies</h2>
+          </div>
+          <div class="policie_items">
+            <div class="policie-items-child">
+              <div class="item">
+                <div class="policite_icon">
+                  <i class="fa-solid fa-clipboard style-custom"></i>
+                </div>
+                <div class="policite_p3">Fees and charges</div>
+              </div>
+              <div class="item">
+                <div class="policite_icon">
+                  <i class="fa-solid fa-car style-custom"></i>
+                </div>
+                <div class="policite_p3">Parking</div>
+              </div>
+              <div class="item">
+                <div class="policite_icon">
+                  <i class="fa-solid fa-dog style-custom"></i>
+                </div>
+                <div class="policite_p3">Pets</div>
+              </div>
+              <div class="item">
+                <div class="policite_icon">
+                  <i class="fa-solid fa-ban-smoking style-custom"></i>
+                </div>
+                <div class="policite_p3">Smoking</div>
+              </div>
+              <div class="item">
+                <div class="policite_icon">
+                  <i class="fa-solid fa-wifi style-custom"></i>
+                </div>
+                <div class="policite_p3">Wifi</div>
+              </div>
+            </div>
+          </div>
+          <div class="policie_button">
+            <button
+              type="button"
+              class="btn btn-primary"
+              ,
+              style="
+                border: 1.5px solid black;
+                background-color: #104c97;
+                font-weight: 700;
+                width: 177px;
+              "
+            >
+              All policies
+            </button>
+          </div>
+        </div>
+        <div class="main__dining">
+          <div class="dining-left">
+            <img
+              class="dining-left-img"
+              src="https://www.hilton.com/im/en/DADDVHI/9210432/daddv-the-sail-2.jpg?impolicy=crop&cw=5428&ch=2897&gravity=NorthWest&xposition=0&yposition=51&rw=768&rh=410"
+              alt=""
+            />
+          </div>
+          <div class="dining-right">
+            <div class="dining-title">
+              <h2 class="dining-right-h2">Dining and drinks</h2>
+            </div>
+            <div class="dining-right-p">
+              <p>
+                Brasserie Nam serves Asian and Western cuisine for breakfast,
+                lunch, and dinner, and Café Viet offers light meals and
+                afternoon tea. Try Mediterranean-inspired flavors with a
+                panoramic view from the 28th floor at The Sail.
+              </p>
+            </div>
+            <div class="dining-right-button">
+              <button
+                type="button"
+                class="btn btn-primary"
+                ,
+                style="
+                  border: 1.5px solid black;
+                  background-color: #104c97;
+                  font-weight: 700;
+                  width: 177px;
+                "
+              >
+                Explore Dining
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="main__event">
+          <div class="event-left">
+            <div class="event-title">
+              <h2 class="event-left-h2">Group travel and events</h2>
+            </div>
+          </div>
+          <div class="event-right">
+            <div class="event-right-content">
+              <p class="event-content-p">
+                We have the stylish space and resources you need for your next
+                gathering. Keep your attendees together by reserving 10 – 25
+                rooms instantly online.
+              </p>
+            </div>
+            <div class="event-right-button">
+              <button type="button" class="btn btn-primary event-button-style">
+                Plan an Event
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="main__location">
+          <div class="location-title">
+            <h2 class="location-h2">Location and transportation</h2>
+          </div>
+          <div class="location-content">
+            <div class="location-left">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button
+                    class="nav-link active"
+                    id="nav-home-tab"
+                    data-toggle="tab"
+                    data-target="#nav-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-home"
+                    aria-selected="true"
+                  >
+                    What's nearby
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-profile-tab"
+                    data-toggle="tab"
+                    data-target="#nav-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-profile"
+                    aria-selected="false"
+                  >
+                    Airport info
+                  </button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="nav-home"
+                  role="tabpanel"
+                  aria-labelledby="nav-home-tab"
+                >
+                  <div class="container-nearby">
+                    <div class="nearby">
+                      <div class="nearby-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>City Center</span>
+                      </div>
+                      <div class="nearby-text">
+                        <span>0.20 kilometers</span>
+                      </div>
+                    </div>
+                    <div class="nearby">
+                      <div class="nearby-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Da Nang Museum</span>
+                      </div>
+                      <div class="nearby-text">
+                        <span>0.50 kilometers</span>
+                      </div>
+                    </div>
+                    <div class="nearby">
+                      <div class="nearby-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Han Market</span>
+                      </div>
+                      <div class="nearby-text"><span>1 kilometer</span></div>
+                    </div>
+                    <div class="nearby">
+                      <div class="nearby-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Da Nang Fine Art Museum</span>
+                      </div>
+                      <div class="nearby-text">
+                        <span>1.20 kilometers</span>
+                      </div>
+                    </div>
+                    <div class="nearby">
+                      <div class="nearby-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Cham Museum</span>
+                      </div>
+                      <div class="nearby-text">
+                        <span>2.30 kilometers</span>
+                      </div>
+                    </div>
+                    <div class="nearby">
+                      <div class="nearby-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Da Nang Beach</span>
+                      </div>
+                      <div class="nearby-text">
+                        <span>3.20 kilometers</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-profile"
+                  role="tabpanel"
+                  aria-labelledby="nav-profile-tab"
+                >
+                  <div class="container-airport">
+                    <div class="airport-danang">
+                      <div class="airport">
+                        <div class="airport-icon-left">
+                          <i class="fa-solid fa-plane-departure"></i>
+                          <span>Da Nang, Vietnam</span>
+                        </div>
+                        <div class="airport-text-right">
+                          <span>4 kilometers</span>
+                        </div>
+                      </div>
+                      <div class="airport">
+                        <div class="airport-icon-left">
+                          <span>Airport shuttle</span> <br />
+                          <i class="fa-solid fa-x"></i>
+                          <span>Not available</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="airport-hue">
+                      <div class="airport">
+                        <div class="airport-icon-left">
+                          <i class="fa-solid fa-plane-departure"></i>
+                          <span>Hue, Vietnam</span>
+                        </div>
+                        <div class="airport-text-right">
+                          <span>82 kilometers</span>
+                        </div>
+                      </div>
+                      <div class="airport">
+                        <div class="airport-icon-left">
+                          <span>Airport shuttle</span> <br />
+                          <i class="fa-solid fa-x"></i>
+                          <span>Not available</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="location-right">
+              <div class="location-right-img">
+                <img
+                  src="https://du-lich.chudu24.com/f/m/2308/25/khach-san-hilton-da-nang.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-container-content">
+          <div class="content-left">
+            <h5>How can we help?</h5>
+            <div class="content-left-button">
+              <button
+                type="button"
+                class="btn btn-primary"
+                ,
+                style="
+                  border: 1.5px solid black;
+                  background-color: #104c97;
+                  font-weight: 700;
+                  width: 177px;
+                "
+              >
+                Request a Call
+              </button>
+            </div>
+            <div class="content-left-icon">
+              <img
+                class="social-icon"
+                src="https://www.pngall.com/wp-content/uploads/13/Twitter-Logo-PNG-Images-HD-180x180.png"
+                alt=""
+              />
+              <img
+                class="social-icon"
+                src="https://freepnglogo.com/images/all_img/1713419166FB_Logo_PNG.png"
+                alt=""
+              />
+              <img
+                class="social-icon"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHP2W0X8Bj9Wwou8Y5Iv2q_Aa-nME9SMwEAA&s"
+                alt=""
+              />
+              <img
+                class="social-icon"
+                src="https://static.vecteezy.com/system/resources/thumbnails/023/986/704/small/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.png"
+                alt=""
+              />
+              <img
+                class="social-icon"
+                src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <di class="content-right">
+            <ul>
+              <li class="mb-2">
+                <a href="https://www.buyhiltongiftcards.com/"
+                  >Hilton Gift Card
+                </a>
+              </li>
+              <li class="mb-2">
+                <a
+                  href="https://www.hilton.com/en/locations/pet-friendly/?cid=OH,MB,PetFriendlyFooter,MULTIPR,Aux,Home,SingleLink,i83316"
+                  >Pet-Friendly Stays</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="https://www.hilton.com/en/travel/?cid=OH,MB,THFooter,MULTIPR,Tile,AboutUs,SingleLink,i81797"
+                  >Travel Inspiration</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="https://help.hilton.com/s/?_gl=1*8s6wr*_gcl_aw*R0NMLjE3MTk1ODE0NTUuQ2owS0NRandzdVN6QmhDTEFSSXNBSWNkTG02WllIMVlJMDdIU055Q1hPSUZPdWpkZzRVS2VwQU9lQWJ0MTJWQ3dOalBkTXg2ZGJ1SlFyUWFBcHR4RUFMd193Y0I.*_gcl_dc*R0NMLjE3MTk1ODE0NTUuQ2owS0NRandzdVN6QmhDTEFSSXNBSWNkTG02WllIMVlJMDdIU055Q1hPSUZPdWpkZzRVS2VwQU9lQWJ0MTJWQ3dOalBkTXg2ZGJ1SlFyUWFBcHR4RUFMd193Y0I.*_gcl_au*MTAwNzkwNzQ5NC4xNzE5MjM0MjMw"
+                  >Customer Support</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="https://www.hilton.com/en/p/accessibility/"
+                  >Web Accessibility</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="https://www.hilton.com/en/corporate/development/"
+                  >Development</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="https://stories.hilton.com/brands/hilton-hotels?_gl=1*x2782d*_gcl_aw*R0NMLjE3MTk1ODE1MzguQ2owS0NRandzdVN6QmhDTEFSSXNBSWNkTG02WllIMVlJMDdIU055Q1hPSUZPdWpkZzRVS2VwQU9lQWJ0MTJWQ3dOalBkTXg2ZGJ1SlFyUWFBcHR4RUFMd193Y0I.*_gcl_dc*R0NMLjE3MTk1ODE1MzguQ2owS0NRandzdVN6QmhDTEFSSXNBSWNkTG02WllIMVlJMDdIU055Q1hPSUZPdWpkZzRVS2VwQU9lQWJ0MTJWQ3dOalBkTXg2ZGJ1SlFyUWFBcHR4RUFMd193Y0I.*_gcl_au*MTAwNzkwNzQ5NC4xNzE5MjM0MjMw"
+                  >Media</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="https://jobs.hilton.com/apac/en">Careers</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="mb-2">
+                <a href="https://www.hilton.com/en/p/sitemap/">Site Map</a>
+              </li>
+              <li class="mb-2">
+                <a href="https://www.hilton.com/en/p/global-privacy-statement/"
+                  >Global Privacy Statement</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="https://secure.ethicspoint.com/domain/media/en/gui/23073/index.html"
+                  >Hilton Hotline</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="https://esg.hilton.com/?_gl=1%2A1rv6wbh%2A_gcl_aw%2AR0NMLjE3MTk1ODE2OTIuQ2owS0NRandzdVN6QmhDTEFSSXNBSWNkTG02WllIMVlJMDdIU055Q1hPSUZPdWpkZzRVS2VwQU9lQWJ0MTJWQ3dOalBkTXg2ZGJ1SlFyUWFBcHR4RUFMd193Y0I.%2A_gcl_dc%2AR0NMLjE3MTk1ODE2OTIuQ2owS0NRandzdVN6QmhDTEFSSXNBSWNkTG02WllIMVlJMDdIU055Q1hPSUZPdWpkZzRVS2VwQU9lQWJ0MTJWQ3dOalBkTXg2ZGJ1SlFyUWFBcHR4RUFMd193Y0I.%2A_gcl_au%2AMTAwNzkwNzQ5NC4xNzE5MjM0MjMw"
+                  >Corporate Responsibility</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="https://www.hilton.com/en/hilton-honors/terms/"
+                  >Hilton Honors Discount Terms & Conditions</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="https://cr.hilton.com/wp-content/uploads/2021/06/Hilton-Slavery-and-Trafficking-Statement-2020.pdf?_gl=1*twfh1d*_gcl_aw*R0NMLjE3MTk1ODE4NjIuQ2owS0NRandzdVN6QmhDTEFSSXNBSWNkTG02WllIMVlJMDdIU055Q1hPSUZPdWpkZzRVS2VwQU9lQWJ0MTJWQ3dOalBkTXg2ZGJ1SlFyUWFBcHR4RUFMd193Y0I.*_gcl_dc*R0NMLjE3MTk1ODE4NjIuQ2owS0NRandzdVN6QmhDTEFSSXNBSWNkTG02WllIMVlJMDdIU055Q1hPSUZPdWpkZzRVS2VwQU9lQWJ0MTJWQ3dOalBkTXg2ZGJ1SlFyUWFBcHR4RUFMd193Y0I.*_gcl_au*MTAwNzkwNzQ5NC4xNzE5MjM0MjMw"
+                  >Modern Slavery and Human Trafficking</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="https://www.hilton.com/en/p/site-usage-agreement/"
+                  >Site Usage Agreement</a
+                >
+              </li>
+            </ul>
+          </di>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
